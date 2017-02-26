@@ -6,7 +6,7 @@
 
 var config = {
 	port: 8080,
-	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.1/24"],
+	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.1/120"],
 
 	language: 'en',
 	timeFormat: 12,
@@ -19,6 +19,17 @@ var config = {
 		},
 		{	module: 'MMM-Remote-Control',
 			position: 'bottom_left'
+		},
+		{   module: 'MMM-MMM-RandomQuranAyah.',
+			position: 'top_bar',
+			config: {
+            apiVersion: '1.0',
+            showArabic: true,
+            showTranslation: true,
+            surahArabicName: false,
+            translationLang: 'en.yusufali',
+            updateInterval: 30000
+        	}
 		},
 		{
 			module: "updatenotification",
