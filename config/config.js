@@ -17,19 +17,19 @@ var config = {
 		{
 			module: 'alert',
 		},
-		{	module: 'MMM-Remote-Control',
-			position: 'bottom_left'
-		},
-		{   module: 'MMM-MMM-RandomQuranAyah.',
+		{   module: 'MMM-RandomQuranAyah',
 			position: 'top_bar',
 			config: {
-            apiVersion: '1.0',
-            showArabic: true,
-            showTranslation: true,
-            surahArabicName: false,
-            translationLang: 'en.yusufali',
-            updateInterval: 30000
-        	}
+				apiVersion: '1.0',
+            	showArabic: true,
+            	showTranslation: true,
+            	surahArabicName: false,
+            	translationLang: 'en.yusufali',
+            	updateInterval: 3600 * 10
+			}
+		},
+		{	module: 'MMM-Remote-Control',
+			position: 'bottom_left'
 		},
 		{
 			module: "updatenotification",
